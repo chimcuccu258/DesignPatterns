@@ -1,4 +1,4 @@
-package Structural.Decorator.beverage;
+package Structural.Decorator.Beverage;
 
 public class Mocha extends CondimentDecorator{
   public Mocha(Beverage beverage) {

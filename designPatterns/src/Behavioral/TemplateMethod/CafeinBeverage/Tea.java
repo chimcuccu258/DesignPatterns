@@ -1,4 +1,4 @@
-package Behavioral.TemplateMethod.cafein_beverage;
+package Behavioral.TemplateMethod.CafeinBeverage;
 
 public class Tea extends CaffeinBeverage{
   @Override

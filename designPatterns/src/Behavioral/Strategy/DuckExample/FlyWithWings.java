@@ -1,4 +1,4 @@
-package Behavioral.Strategy.duckExample;
+package Behavioral.Strategy.DuckExample;
 
 public class FlyWithWings implements IFlyBehavior {
   @Override

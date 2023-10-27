@@ -1,4 +1,4 @@
-package Structural.Decorator.beverage;
+package Structural.Decorator.Beverage;
 
 public class Milk extends CondimentDecorator{
   public Milk(Beverage beverage) {

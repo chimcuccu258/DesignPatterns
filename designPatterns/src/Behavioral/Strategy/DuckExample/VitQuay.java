@@ -1,6 +1,6 @@
-package Behavioral.Strategy.duckExample;
+package Behavioral.Strategy.DuckExample;
 
-public class vitQuay extends Duck{
+public class VitQuay extends Duck{
 
   @Override
   public void display() {

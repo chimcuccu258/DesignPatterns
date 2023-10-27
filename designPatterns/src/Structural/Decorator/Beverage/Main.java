@@ -1,4 +1,4 @@
-package Structural.Decorator.beverage;
+package Structural.Decorator.Beverage;
 
 public class Main {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package Structural.Decorator.beverage;
+package Structural.Decorator.Beverage;
 
 public abstract class Beverage {
   String description;

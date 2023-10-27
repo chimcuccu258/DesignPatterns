@@ -1,4 +1,4 @@
-package Structural.Decorator.beverage;
+package Structural.Decorator.Beverage;
 
 public class HouseBlend extends Beverage{
   public HouseBlend(String description) {
