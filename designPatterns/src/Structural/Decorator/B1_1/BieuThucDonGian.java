@@ -16,6 +16,7 @@ public class BieuThucDonGian extends BieuThuc{
       return toanHang;
    }
    public String bieuThuc() {
-      return toanHang + " ";
+//      return toanHang + " ";
+      return "" + toanHang;
    }
 }

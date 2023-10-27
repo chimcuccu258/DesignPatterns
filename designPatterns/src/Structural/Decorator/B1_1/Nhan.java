@@ -15,11 +15,13 @@ public class Nhan extends BieuThucDecorator{
 
    @Override
    public String bieuThuc() {
-      return super.bieuThuc() + "* " + toanHang;
+//      return super.bieuThuc() + "* " + toanHang;
+      return "(" + bieuThuc.bieuThuc() + ") * " + toanHang;
+      //          6 + 9                      *        8
    }
 
    @Override
    public float giaTri() {
-      return super.giaTri() * toanHang;
+      return bieuThuc.giaTri() * toanHang;
    }
 }

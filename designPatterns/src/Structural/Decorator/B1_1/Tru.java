@@ -14,11 +14,11 @@ public class Tru extends BieuThucDecorator{
 
    @Override
    public String bieuThuc() {
-      return super.bieuThuc() + "- " + toanHang;
+      return bieuThuc.bieuThuc() + " - " + toanHang;
    }
 
    @Override
    public float giaTri() {
-      return super.giaTri() - toanHang;
+      return bieuThuc.giaTri() - toanHang;
    }
 }
