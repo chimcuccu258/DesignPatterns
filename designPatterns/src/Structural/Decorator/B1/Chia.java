@@ -1,4 +1,4 @@
-package Structural.Decorator.B1_1;
+package Structural.Decorator.B1;
 /*
  * @created 27/10/2023 - 21:48
  * @project designPatterns

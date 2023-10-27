@@ -1,4 +1,9 @@
 package Structural.Decorator.B1;
+/*
+ * @created 27/10/2023 - 20:23
+ * @project designPatterns
+ * @author TaosDev
+ */
 
 public class BieuThucDecorator extends BieuThuc {
    BieuThuc bieuThuc;
@@ -8,12 +13,12 @@ public class BieuThucDecorator extends BieuThuc {
    }
 
    @Override
-   public float giaTri() {
-      return bieuThuc.giaTri();
+   public String bieuThuc() {
+      return bieuThuc.bieuThuc();
    }
 
    @Override
-   public String bieuThuc() {
-      return bieuThuc.bieuThuc();
+   public float giaTri() {
+      return bieuThuc.giaTri();
    }
 }
