@@ -1,24 +1,21 @@
 package Creational.Singleton.A3;
 
 public class ShapeFactory {
-   private static ShapeFactory instance;
-   private ShapeFactory() {
-   }
-   public static ShapeFactory getInstance() {
-      if (instance == null)
-         instance = new ShapeFactory();
-      return instance;
-   }
    public Shape createShape(ShapeType shapeType) {
+      Shape shape;
       switch (shapeType) {
          case CIRCLE:
-            return new Circle();
+            shape = Circle.create();
+            break;
          case RECTANGLE:
-            return new Rectangle();
-         case SQUARE:
-            return new Triangle();
+            shape = Rectangle.create();
+            break;
+         case TRIANGLE:
+            shape = Triangle.create();
+            break;
          default:
-            return null;
+            shape = null;
       }
+      return shape;
    }
 }

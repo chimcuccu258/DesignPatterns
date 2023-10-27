@@ -1,11 +1,24 @@
 package Creational.Singleton.A3;
 
 public class Circle extends Shape {
-   @Override
+   private static Circle circle;
+
+   public Circle() {
+
+   }
+
+   public Circle(String brush, String paper, String frame) {
+      super(brush, paper, frame);
+   }
+
    public String draw() {
-      setBrush("Brush");
-      setFrame("Circle Frame");
-      setPaper("A3");
-      return getBrush() + " " + getFrame() + " " + getPaper();
+      return "Circle";
+   }
+
+   public static Circle create() {
+      if (circle == null) {
+         circle = new Circle();
+      }
+      return circle;
    }
 }
