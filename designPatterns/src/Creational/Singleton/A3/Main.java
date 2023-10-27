@@ -1,25 +1,19 @@
 package Creational.Singleton.A3;
+/*
+ * @created 27/10/2023 - 23:26
+ * @project designPatterns
+ * @author TaosDev
+ */
 
 public class Main {
    public static void main(String[] args) {
-      ShapeFactory shape = new ShapeFactory();
+      ShapeFactory shapeFactory = ShapeFactory.getInstance();
+      Shape s = shapeFactory.createShape(ShapeType.Circle);
+      System.out.println(s.draw());
+      Shape s1 = shapeFactory.createShape(ShapeType.Rectangle);
+      System.out.println(s1.draw());
+      Shape s2 = shapeFactory.createShape(ShapeType.Triangle);
+      System.out.println(s2.draw());
 
-      Shape circle = shape.createShape(ShapeType.CIRCLE);
-      circle.setBrush("circle setBrush");
-      circle.setFrame("circle setFrame");
-      circle.setPaper("circle setPaper");
-      System.out.println(circle.toString());
-
-      Shape rectangle = shape.createShape(ShapeType.RECTANGLE);
-      rectangle.setBrush("rectangle setBrush");
-      rectangle.setFrame("rectangle setFrame");
-      rectangle.setPaper("rectangle setPaper");
-      System.out.println(rectangle.toString());
-
-      Shape triangle = shape.createShape(ShapeType.TRIANGLE);
-      triangle.setBrush("triangle setBrush");
-      triangle.setFrame("triangle setFrame");
-      triangle.setPaper("triangle setPaper");
-      System.out.println(triangle.toString());
    }
 }

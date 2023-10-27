@@ -1,24 +1,17 @@
 package Creational.Singleton.A3;
+/*
+ * @created 27/10/2023 - 23:22
+ * @project designPatterns
+ * @author TaosDev
+ */
 
-public class Rectangle extends Shape {
-   public static Rectangle rectangle;
-
-   public Rectangle(String brush, String paper, String frame) {
-      super(brush, paper, frame);
-   }
-
-   public Rectangle() {
-   }
-
+public class Rectangle extends Shape{
    @Override
    public String draw() {
-      return "Rectangle";
-   }
-
-   public static Rectangle create() {
-      if (rectangle == null) {
-         rectangle = new Rectangle();
-      }
-      return rectangle;
+//      return null;
+      setBrush("Ink brush");
+      setFrame("Rectangle");
+      setPaper("A3");
+      return getBrush() + " - " + getPaper() + " - " + getFrame();
    }
 }

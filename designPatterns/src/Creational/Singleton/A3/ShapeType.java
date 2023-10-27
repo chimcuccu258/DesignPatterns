@@ -1,5 +1,5 @@
 package Creational.Singleton.A3;
 
 public enum ShapeType {
-    CIRCLE, RECTANGLE, TRIANGLE
+    Circle, Rectangle, Triangle
 }

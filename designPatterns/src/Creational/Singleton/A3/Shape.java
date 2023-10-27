@@ -1,46 +1,36 @@
 package Creational.Singleton.A3;
+/*
+ * @created 27/10/2023 - 23:21
+ * @project designPatterns
+ * @author TaosDev
+ */
 
 public abstract class Shape {
    private String brush, paper, frame;
 
-   public abstract String draw();
-
-   public Shape(String brush, String paper, String frame) {
-      this.brush = brush;
-      this.paper = paper;
-      this.frame = frame;
-   }
-
-   public Shape() {
-
-   }
-
-   @Override
-   public String toString() {
-      return draw() + "," + brush + "," + paper + "," + frame;
-   }
-
    public String getBrush() {
       return brush;
-   }
-
-   public String getPaper() {
-      return paper;
-   }
-
-   public String getFrame() {
-      return frame;
    }
 
    public void setBrush(String brush) {
       this.brush = brush;
    }
 
+   public String getPaper() {
+      return paper;
+   }
+
    public void setPaper(String paper) {
       this.paper = paper;
+   }
+
+   public String getFrame() {
+      return frame;
    }
 
    public void setFrame(String frame) {
       this.frame = frame;
    }
+
+   public abstract String draw();
 }
