@@ -50,9 +50,9 @@ public class Book {
    @Override
    public String toString() {
       return "Book: \n" +
-              "title= " + title +
-              ", \nauthor= " + author +
-              ", \npages= " + pages +
-              ", \nchapters= " + chapters;
+              "Title= " + title +
+              ", \nAuthor= " + author +
+              ", \nPages= " + pages +
+              ", \nChapters= " + chapters;
    }
 }

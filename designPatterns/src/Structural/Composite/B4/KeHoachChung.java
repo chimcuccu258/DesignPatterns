@@ -22,10 +22,10 @@ public class KeHoachChung extends KeHoachHocTap{
 
   @Override
   public int getHocPhi() {
-    int tong = 0;
+    int tongHp = 0;
     for (KeHoachHocTap k: list)
-      tong += k.getHocPhi();
-    return tong;
+      tongHp += k.getHocPhi();
+    return tongHp;
   }
 
   @Override
