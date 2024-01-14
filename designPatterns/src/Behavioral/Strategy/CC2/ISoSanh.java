@@ -1,5 +1,5 @@
 package Behavioral.Strategy.CC2;
 
 public interface ISoSanh<T> {
-    public int soSanh(T t1, T t2);
+    int soSanh(T o1,T o2);
 }
